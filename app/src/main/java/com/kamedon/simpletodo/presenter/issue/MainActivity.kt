@@ -1,4 +1,4 @@
-package com.kamedon.simpletodo.presenter.todo
+package com.kamedon.simpletodo.presenter.issue
 
 import android.databinding.DataBindingUtil
 import android.support.v7.app.AppCompatActivity

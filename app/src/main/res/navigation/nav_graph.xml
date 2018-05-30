@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/issueListFragment"
-        android:name="com.kamedon.simpletodo.presenter.todo.IssueListFragment"
+        android:name="com.kamedon.simpletodo.presenter.issue.IssueListFragment"
         android:label="fragment_issue_list"
         tools:layout="@layout/fragment_issue_list">
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/issueFormFragment"
-        android:name="com.kamedon.simpletodo.presenter.todo.IssueFormFragment"
+        android:name="com.kamedon.simpletodo.presenter.issue.IssueFormFragment"
         android:label="fragment_issue_form"
         tools:layout="@layout/fragment_issue_form" />
 </navigation>

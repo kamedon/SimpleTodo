@@ -1,4 +1,4 @@
-package com.kamedon.simpletodo.presenter.todo
+package com.kamedon.simpletodo.presenter.issue
 
 import android.arch.lifecycle.ViewModel
 

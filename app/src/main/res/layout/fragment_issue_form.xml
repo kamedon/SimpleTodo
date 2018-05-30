@@ -5,7 +5,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presenter.todo.IssueFormFragment">
+        tools:context=".presenter.issue.IssueFormFragment">
 
         <TextView
             android:layout_width="match_parent"
