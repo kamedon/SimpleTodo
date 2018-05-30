@@ -8,19 +8,19 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="todoFormFragment">
+                  <entry key="issueFormFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="322" />
-                            <option name="y" value="171" />
+                            <option name="x" value="260" />
+                            <option name="y" value="20" />
                           </Point>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="todoListFragment">
+                  <entry key="issueListFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -31,7 +31,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="to_todo_form">
+                            <entry key="to_issue_form">
                               <value>
                                 <LayoutPositions />
                               </value>

@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/todoListFragment">
+    app:startDestination="@id/issueListFragment">
 
     <fragment
-        android:id="@+id/todoListFragment"
-        android:name="com.kamedon.simpletodo.presenter.todo.TodoListFragment"
-        android:label="fragment_todo_list"
-        tools:layout="@layout/fragment_todo_list" >
+        android:id="@+id/issueListFragment"
+        android:name="com.kamedon.simpletodo.presenter.todo.IssueListFragment"
+        android:label="fragment_issue_list"
+        tools:layout="@layout/fragment_issue_list">
         <action
-            android:id="@+id/to_todo_form"
-            app:destination="@id/todoFormFragment"
-            app:popUpTo="@+id/todoListFragment"
+            android:id="@+id/to_issue_form"
+            app:destination="@id/issueFormFragment"
+            app:popUpTo="@+id/issueListFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/todoFormFragment"
-        android:name="com.kamedon.simpletodo.presenter.todo.TodoFormFragment"
-        android:label="fragment_todo_form"
-        tools:layout="@layout/fragment_todo_form" />
+        android:id="@+id/issueFormFragment"
+        android:name="com.kamedon.simpletodo.presenter.todo.IssueFormFragment"
+        android:label="fragment_issue_form"
+        tools:layout="@layout/fragment_issue_form" />
 </navigation>

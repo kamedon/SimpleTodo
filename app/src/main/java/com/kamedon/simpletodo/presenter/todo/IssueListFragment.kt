@@ -6,19 +6,17 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.navigation.Navigation
 import com.kamedon.simpletodo.R
-import com.kamedon.simpletodo.databinding.FragmentTodoFormBinding
-import com.kamedon.simpletodo.databinding.FragmentTodoListBinding
+import com.kamedon.simpletodo.databinding.FragmentIssueListBinding
 
-class TodoListFragment : Fragment() {
+class IssueListFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val binding = DataBindingUtil.inflate<FragmentTodoListBinding>(inflater, R.layout.fragment_todo_list, container, false)
+        val binding = DataBindingUtil.inflate<FragmentIssueListBinding>(inflater, R.layout.fragment_issue_list, container, false)
         binding.nextBtn.setOnClickListener {
-            view?.let { Navigation.findNavController(it).navigate(TodoListFragmentDirections.to_todo_form()) }
+            view?.let { Navigation.findNavController(it).navigate(IssueListFragmentDirections.to_issue_form()) }
         }
         return binding.root
     }
