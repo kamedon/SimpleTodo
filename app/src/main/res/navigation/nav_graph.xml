@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/todoListFragment"
-        android:name="com.kamedon.simpletodo.TodoListFragment"
+        android:name="com.kamedon.simpletodo.presenter.todo.TodoListFragment"
         android:label="fragment_todo_list"
         tools:layout="@layout/fragment_todo_list" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/todoFormFragment"
-        android:name="com.kamedon.simpletodo.TodoFormFragment"
+        android:name="com.kamedon.simpletodo.presenter.todo.TodoFormFragment"
         android:label="fragment_todo_form"
         tools:layout="@layout/fragment_todo_form" />
 </navigation>

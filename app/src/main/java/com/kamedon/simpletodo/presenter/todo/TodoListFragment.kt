@@ -1,4 +1,4 @@
-package com.kamedon.simpletodo
+package com.kamedon.simpletodo.presenter.todo
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
+import com.kamedon.simpletodo.R
 
 class TodoListFragment : Fragment() {
 
