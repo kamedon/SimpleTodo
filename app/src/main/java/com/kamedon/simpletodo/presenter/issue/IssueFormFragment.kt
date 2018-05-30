@@ -28,6 +28,7 @@ class IssueFormFragment : Fragment(), KodeinAware {
                               savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<FragmentIssueFormBinding>(inflater, R.layout.fragment_issue_form, container, false)
         binding.presentViewModel = presentViewModel
+        binding.setLifecycleOwner(this)
         return binding.root
     }
 

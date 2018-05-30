@@ -1,5 +1,13 @@
 package com.kamedon.simpletodo.domain.repository
 
-interface IIssueRepository
+import com.kamedon.simpletodo.domain.entity.Issue
 
-class IssueRepository : IIssueRepository
+interface IIssueRepository {
+    suspend fun save(issue: Issue)
+
+}
+
+class IssueRepository : IIssueRepository {
+    override suspend fun save(issue: Issue) {
+    }
+}
