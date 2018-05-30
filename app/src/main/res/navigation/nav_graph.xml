@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/todoListFragment">
+
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="com.kamedon.simpletodo.TodoListFragment"
+        android:label="fragment_todo_list"
+        tools:layout="@layout/fragment_todo_list" >
+        <action
+            android:id="@+id/to_todo_form"
+            app:destination="@id/todoFormFragment"
+            app:popUpTo="@+id/todoListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoFormFragment"
+        android:name="com.kamedon.simpletodo.TodoFormFragment"
+        android:label="fragment_todo_form"
+        tools:layout="@layout/fragment_todo_form" />
+</navigation>
