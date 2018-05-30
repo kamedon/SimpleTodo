@@ -10,9 +10,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.kamedon.simpletodo.R
 import com.kamedon.simpletodo.databinding.FragmentTodoFormBinding
+import org.kodein.di.Kodein
+import org.kodein.di.KodeinAware
+import org.kodein.di.android.closestKodein
 
 
-class TodoFormFragment : Fragment() {
+class TodoFormFragment : Fragment(), KodeinAware {
+    override val kodein: Kodein by closestKodein()
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
