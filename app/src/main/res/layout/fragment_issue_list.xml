@@ -6,7 +6,7 @@
 
         <variable
             name="presentViewModel"
-            type="com.kamedon.simpletodo.presenter.issue.IssueListPresentViewModel" />
+            type="com.kamedon.simpletodo.presenter.issue.IssueListViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout

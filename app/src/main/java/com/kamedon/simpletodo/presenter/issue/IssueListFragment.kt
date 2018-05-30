@@ -21,7 +21,7 @@ class IssueListFragment : Fragment(), KodeinAware {
         extend(parentKodein)
     }
 
-    private val presentViewModel: IssueListPresentViewModel by instance()
+    private val presentViewModel: IssueListViewModel by instance()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

@@ -21,12 +21,13 @@ class IssueFormFragment : Fragment(), KodeinAware {
         extend(parentKodein)
     }
 
-    private val presentViewModel: IssueFormPresentViewModel by instance()
+    private val presentViewModel: IssueFormViewModel by instance()
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<FragmentIssueFormBinding>(inflater, R.layout.fragment_issue_form, container, false)
+        binding.presentViewModel = presentViewModel
         return binding.root
     }
 
