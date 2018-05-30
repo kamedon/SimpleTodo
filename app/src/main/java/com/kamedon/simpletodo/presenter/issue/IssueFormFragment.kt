@@ -11,10 +11,17 @@ import com.kamedon.simpletodo.databinding.FragmentIssueFormBinding
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.closestKodein
+import org.kodein.di.generic.instance
 
 
 class IssueFormFragment : Fragment(), KodeinAware {
-    override val kodein: Kodein by closestKodein()
+    private val parentKodein by closestKodein()
+
+    override val kodein: Kodein = Kodein.lazy {
+        extend(parentKodein)
+    }
+
+    private val presentViewModel: IssueFormPresentViewModel by instance()
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
