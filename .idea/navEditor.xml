@@ -31,7 +31,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_todoListFragment_to_todoFormFragment">
+                            <entry key="to_todo_form">
                               <value>
                                 <LayoutPositions />
                               </value>
