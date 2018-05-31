@@ -13,7 +13,7 @@ object ViewModelModule {
             IssueFormViewModel(instance())
         }
         bind<IssueListViewModel>() with provider {
-            IssueListViewModel()
+            IssueListViewModel(instance())
         }
     }
 }
